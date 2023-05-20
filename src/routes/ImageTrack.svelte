@@ -2,6 +2,8 @@
 	import ImageCard from './ImageCard.svelte';
 
 	import image_fallback from '$lib/images/IMG_3004.jpg';
+	import { track_cards } from './track_cards';
+
 	const imageTitle = 'Ionic Scroll';
 	const imageText = 'The ionic scroll is cool';
 
@@ -54,11 +56,11 @@
 	on:mouseup={handleMouseUp}
 	bind:this={track}
 >
+	{#each track_cards as card}
+		<ImageCard imageSrc={card.image_source} imageTitle={card.title} imageText={card.text} />
+	{/each}
 	<ImageCard imageSrc={image_fallback} {imageTitle} {imageText} />
-    <ImageCard imageSrc={image_fallback} {imageTitle} {imageText} />
-    <ImageCard imageSrc={image_fallback} {imageTitle} {imageText} />
-    <ImageCard imageSrc={image_fallback} {imageTitle} {imageText} />
-    <ImageCard imageSrc={image_fallback} {imageTitle} {imageText} />
+
 </div>
 
 <style>

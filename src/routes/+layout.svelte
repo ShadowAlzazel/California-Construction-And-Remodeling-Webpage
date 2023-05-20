@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>California based Construction Company. Website built using <a href="https://kit.svelte.dev">kit.svelte.dev</a>!</p>
 	</footer>
 </div>
 
