@@ -5,8 +5,8 @@
 </script>
 
 <div class="image-card" draggable="false">
-	<img class="image" src={imageSrc} alt="" draggable="false" />
-	<div class="image-details">
+	<img class="image" src={imageSrc} alt="" draggable="false"/>
+	<div class="image-details" draggable="false">
 		<h3 class="image-title">{imageTitle}</h3>
 		<p class="image-text">{imageText}</p>
 	</div>
