@@ -2,14 +2,13 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import * as config from '$lib/config'
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
+	<a href="/" class="title">
+		<b>{config.title}</b>
+	</a>
 
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -19,20 +18,20 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>	
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/contractors' ? 'page' : undefined}>
+				<a href="/contractors">Contractors</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/gallery' ? 'page' : undefined}>
 				<a href="/gallery">Gallery</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/contractors' ? 'page' : undefined}>
-				<a href="/contractors">Contractors</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/vendors' ? 'page' : undefined}>
-				<a href="/vendors">Vendors</a>
+			<li aria-current={$page.url.pathname === '/partners' ? 'page' : undefined}>
+				<a href="/partners">Partners</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
+				<a href="/contact">Contact</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

@@ -1,4 +1,4 @@
-/* Gallery Cards */
+/* Track Cards */
 
 export const track_cards = [
 	{

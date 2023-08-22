@@ -1,8 +1,8 @@
 <script lang="ts">
-	import ImageCard from './ImageCard.svelte';
+	import ImageCard from './imageCard.svelte';
 
 	import image_fallback from '$lib/images/IMG_3004.jpg';
-	import { track_cards } from './track_cards';
+	import { track_cards } from './trackCards';
 
 	const imageTitle = 'Ionic Scroll';
 	const imageText = 'The ionic scroll is cool';
@@ -60,7 +60,6 @@
 		<ImageCard imageSrc={card.image_source} imageTitle={card.title} imageText={card.text} />
 	{/each}
 	<ImageCard imageSrc={image_fallback} {imageTitle} {imageText} />
-
 </div>
 
 <style>
@@ -73,5 +72,4 @@
     transform: translate(0%, -50%);
     transition: opacity 400ms ease;
 }
-
 </style>
